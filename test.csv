@@ -1,0 +1,10 @@
+orderId,customerId,deliveryPincode,orderDate,items
+1,1011,560000,12-11-2019,Sugar:5;Onion:3;Carrot:9;Bread:9;
+2,1007,560013,10-11-2019,Butter:4;Beans:9;Yogurt:9;Milk:10;
+3,1018,560003,02-11-2019,Carrot:6;Sugar:10;Salt:3;Milk:2;
+4,1004,560015,12-11-2019,Butter:4;Bread:9;
+5,1013,560007,10-11-2019,Carrot:4;Yogurt:5;Chocolate:5;Bread:1;
+6,1017,560000,16-11-2019,Salt:8;Chocolate:2;Chocolate:5;Beans:6;
+7,1014,560005,06-11-2019,Butter:2;Wheat:9;Bread:4;Milk:5;
+8,1004,560016,12-11-2019,Bread:1;Carrot:1;Carrot:5;Beans:2;
+9,1018,560008,13-11-2019,Salt:8;Chocolate:8;Butter:2;Bread:8;
