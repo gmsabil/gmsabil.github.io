@@ -1,25 +1,22 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /webapps/appname
+   - source: /
+     destination: /var/www/html
 permissions:
-  - object: /webapps/appname
-    owner: apache
-    group: apache
+   - object: /var/www/html
+     pattern: "**"
+     owner: apache
+     group: apache
+     mode: 755
+     type:
+       - file
 hooks:
-  ApplicationStop:
-    - location: codedeploy/ApplicationStop.sh
+   BeforeInstall:
+    - location: scripts/installapache.sh
       runas: root
-  BeforeInstall:
-    - location: codedeploy/BeforeInstall.sh
-      timeout: 600
+    - location: scripts/startapache.sh
       runas: root
-  AfterInstall:
-    - location: codedeploy/AfterInstall.sh
-      timeout: 600
-      runas: root
-  ApplicationStart:
-    - location: codedeploy/ApplicationStart.sh
-      timeout: 60
+   AfterInstall:
+    - location: scripts/restartapache.sh
       runas: root
